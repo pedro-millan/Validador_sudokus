@@ -1,4 +1,4 @@
-# 🧩 Sudoku Validator (Python)
+# 🧩 Validador de Sudokus (Python)
 
 Este proyecto es un **validador de Sudokus** escrito en Python.  
 Permite al usuario introducir un tablero de Sudoku y comprueba si cumple con las reglas básicas:
@@ -27,21 +27,6 @@ Permite al usuario introducir un tablero de Sudoku y comprueba si cumple con las
 	- El tablero en formato 9x9.
 	- El resultado de la validación: "Sí" si es correcto, "No" si hay algún error.
 
-## 🖥️ Ejemplo de salida
-
----- S U D O K U ----
-
-[2, 9, 5, 7, 4, 3, 8, 6, 1]
-[4, 3, 1, 8, 6, 5, 9, 2, 7]
-[8, 7, 6, 1, 9, 2, 5, 4, 3]
-[3, 8, 7, 4, 5, 9, 2, 1, 6]
-[6, 1, 2, 3, 8, 7, 4, 9, 5]
-[5, 4, 9, 2, 1, 6, 7, 3, 8]
-[7, 6, 3, 5, 2, 4, 1, 8, 9]
-[9, 2, 8, 6, 7, 1, 3, 5, 4]
-[1, 5, 4, 9, 3, 8, 6, 7, 2]
-
-Sí
 
 ## 🛠️ Futuras mejoras
 
@@ -69,6 +54,6 @@ Programación modular con funciones.
 Las contribuciones son bienvenidas.
 Si quieres mejorar este validador, abre un issue o haz un pull request 🚀.
 
-### 📜 Licencia
+## 📜 Licencia
 
 Este proyecto está bajo la licencia MIT. Puedes usarlo libremente para aprender, practicar o extenderlo.
