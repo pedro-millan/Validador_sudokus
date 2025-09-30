@@ -129,14 +129,31 @@ fila = 1
 celda = 0
 while fila <= 9:
     valores_fila = input("Introduce 9 valores para la fila " + str(fila) + ": ")
+    # Validamos que son exactamente 9 caracteres
+    if len(valores_fila) != 9:
+        print("Debes introducir exactamente 9 dígitos.")
+        continue
+
+    # Validamos que todos sean números
+    if not valores_fila.isdigit():
+        print("Solo se permiten números.")
+        continue
+
+    # Validamos que no haya repetidos
     if len(set(valores_fila)) != 9:
-        valores_fila = input("No pueden haber números repetidos. Prueba otra vez: ")
-        
-    for valor in valores_fila:
-        valor = int(valor)
-        lista[celda] = valor
-        celda += 1
-    fila += 1
+        print("No pueden haber números repetidos en la fila.")
+        continue
+
+    try:
+        for valor in valores_fila:
+            valor = int(valor)
+            if not 1 <= valor <= 9:
+                raise ValueError("Los números deben estar en el rango 1–9.")
+            lista[celda] = valor
+            celda += 1
+        fila += 1
+    except ValueError as e:
+        print(f"Entrada inválida: {e}")
 
 respuesta = es_correcta(lista)  
 
